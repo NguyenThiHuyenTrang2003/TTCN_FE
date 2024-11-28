@@ -1,0 +1,73 @@
+.menuContainer {
+  padding: 20px;
+  background-color: #f9f9f9;
+
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.menuItem {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.menuImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.menuInfo {
+  padding: 10px;
+  text-align: center;
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+  }
+}
+
+.modalContent {
+  text-align: center;
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+
+  .modalImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}

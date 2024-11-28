@@ -1,0 +1,52 @@
+@import 'src/assets/scss/variables';
+
+.mainModalWrap {
+    width: 100%;
+    
+    .inputWrapper {
+        width: 100%;
+        margin-bottom: 18px;
+
+        .label {
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: $colorBlack;
+            margin-bottom: 4px;
+        }
+
+        .error {
+            display: block;
+            color: $colorError;
+            font-weight: 500;
+        }
+    }
+
+    .btnWrap {
+        margin-top: 20px;
+        text-align: center;
+
+        button {
+            width: 100%;
+            padding: 12px 20px;
+            background-color: $colorPrimary;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: darken($colorPrimary, 10%);
+            }
+
+            &:disabled {
+                background-color: $colorGray;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

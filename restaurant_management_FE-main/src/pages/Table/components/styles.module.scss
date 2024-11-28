@@ -1,0 +1,68 @@
+@import 'src/assets/scss/variables';
+
+.mainModalWrap {
+  width: 100%;
+  
+  .inputWrapper {
+    width: 100%;
+    margin-bottom: 18px;
+
+    .label {
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $colorBlack;
+      margin-bottom: 4px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid $colorBorderInput;
+      border-radius: 4px;
+      outline: none;
+
+      &:focus {
+        border-color: $colorPrimary;
+        box-shadow: 0 0 5px rgba($colorPrimary, 0.4);
+      }
+    }
+
+    .error {
+      display: block;
+      color: $colorError;
+      font-weight: 500;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+  }
+
+  .btnWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    button {
+      background-color: $mainColor;
+      color: $colorWhite;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($mainColor, 10%);
+      }
+
+      &:disabled {
+        background-color: $colorDisabled;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

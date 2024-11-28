@@ -1,0 +1,42 @@
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background: #fff;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+  }
+  
+  .modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+  
+    button {
+      background: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  
+  .modalBody {
+    margin-top: 20px;
+  }
+  
